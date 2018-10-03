@@ -1,0 +1,86 @@
+/*********
+GENERAL
+*********/
+
+
+* {
+    margin: 0; /* This moved every to the left, no space on left side */
+    padding: 0; /* Made input boxes and check button a bit smaller */
+    box-sizing: border-box;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+
+.right { float: right;} /* el with class right are in the right side */
+.red { color: #FF5049 !important; }
+
+
+
+/************
+TOP 
+************/
+
+
+.top {
+    height: 40vh; /* div with class top, made space with the top and placed the inputs lower */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.budget {
+    position: absolute;
+    width: 350px;
+    top: 50%; /* moved down, this are margins */
+    left: 50%; /* moved towards the middle */
+    transform: translate(-50%, -50%); /* Centered everything in the budget div */
+    color: #fff;
+}
+
+
+.budget-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+
+.budget-value {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+.budget-income,
+.budget-expense {
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+
+.budget-income {
+    margin-bottom: 10px;
+    background-color: #28B9B5;
+}
